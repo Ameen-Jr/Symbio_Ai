@@ -19,24 +19,25 @@ Google AI is the "brain" of the Symbio network. When a potential trade is identi
 ---
 
 ## Proof of Google AI Usage
-Attach screenshots in a `/proof` folder:
+> [!TIP]
+> View the full technical implementation and API integration screenshots in our [Proof of Usage directory](./proof).
 
-![AI Proof](./proof/ai_negotiation_logic.png)
+![AI Proof](./proof/ss_GoogleAiStudio.png)
+![AI Proof](./proof/ss_GeminiProof.png)
 
-*(Note: In the live app, this is visible in the "Live Negotiation Feed" which shows the AI's reasoning and dialogue.)*
 
 ---
 
 ## Screenshots 
-Add project screenshots:
 
-![Dashboard](./assets/dashboard_overview.png)  
-![Trade Ledger](./assets/trade_ledger.png)
+![Dashboard](./assets/ss_dashboard.png)  
+![Live Negotiation](./assets/ss_negotiation.png)
+![Business Profile](./assets/ss_profile.png)
 
 ---
 
 ## Demo Video
-Upload your demo video to Google Drive and paste the shareable link here(max 3 minutes).
+will share the link soon
 [Watch Demo](#)
 
 ---
@@ -45,13 +46,18 @@ Upload your demo video to Google Drive and paste the shareable link here(max 3 m
 
 ```bash
 # Clone the repository
-git clone <your-repo-link>
+git clone https://github.com/Ameen-Jr/Symbio_Ai
 
 # Go to project folder
-cd symbio-ai
+cd Symbio_Ai
 
 # Install dependencies
 npm install
+
+#Create a .env file:
+GEMINI_API_KEY=your_key
+APP_URL=http://localhost:3000
+JWT_SECRET=your_secret
 
 # Run the project
 npm run dev
