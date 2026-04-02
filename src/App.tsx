@@ -188,8 +188,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    // Automatic negotiations disabled due to quota limits
-    /*
+  
     const runNegotiations = async () => {
       const pendingTrades = state.trades.filter(t => 
         !state.logs.some(l => l.trade_id === t.id) && 
@@ -249,7 +248,7 @@ export default function App() {
     if (state.trades.length > 0) {
       runNegotiations();
     }
-    */
+    
   }, [state.trades, state.logs]);
 
   useEffect(() => {
